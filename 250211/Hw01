@@ -1,0 +1,35 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+void main(){
+    int a = 0;
+    scanf("%d", &a);
+    if (0 <= a && a < 1000){ 
+        int b = a % 10;
+        int c = (a % 100) / 10;
+        int d = (a /100) ;
+        
+        if (a % 3 == 0 && a % 2 ==1){
+            printf("특별한 숫자 입니다1");
+        }else if(a == 0){
+            printf("평범한 숫자입니다");
+        }else if((b+c+d) % 7 == 0){
+            printf("특별한 숫자 입니다2");
+        }else if(99 < a && a < 1000 && d > b){
+            printf("특별한 숫자 입니다3");
+        }else if(0 < a && a < 100 && c > b){
+            printf("특별한 숫자 입니다4");    
+        }else{
+            printf("평범한 숫자 입니다");
+        }
+    }else{
+        printf ("0~999값을 입력해주세요");
+    }    
+}
