@@ -9,13 +9,16 @@ Code, Compile, Run and Debug online from anywhere in world.
 #include <stdio.h>
 
 int main() {
-    int a, b, c;
+    int a, b, c; 
+    
+    float d;
+    printf("숫자 세개를 띄어쓰기 해서 입력하세요");
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
     if(c != 0) {
-        int d = (a + b) * c - (a - b)/c;
-        printf("%d", d);
+        d = (a + b) * c - (a - b)/(float) c;
+        printf("%f", d);
     }
     else
         printf("c는 0이되면 안됩니다");
