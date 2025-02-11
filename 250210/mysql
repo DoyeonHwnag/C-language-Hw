@@ -3,16 +3,16 @@ create database temp;
 use temp;
 
 create table students(
-students_id int(5),
-name char(10),
-age int(5),
-grade char(2)
+students_id int(5)auto_increment primary key,
+name char(10)not null,
+age int(5)not null,
+grade char(2)not null
 );
 
-insert into students values(1, 'Alice', 20, 'A');
-insert into students values(2, 'Bob', 22, 'B');
-insert into students values(3, 'Charlie', 21, 'A');
-insert into students values(4, 'Dave', 23, 'C');
+insert into students(name, age, grade) values('Alice', 20, 'A');
+insert into students(name, age, grade) values('Bob', 22, 'B');
+insert into students(name, age, grade) values('Charlie', 21, 'A');
+insert into students(name, age, grade) values('Dave', 23, 'C');
 select * from students;
 
 select name,age from students where grade = 'A';
