@@ -16,25 +16,18 @@ void main(){
     scanf("%d", &a);
     if(a >= 90){
         grade = "A등급";
-        printf("%s", grade);
+        printf("%s: %f", grade,1.1 * a);
     }else if(a >= 80){
         grade = "B등급";
-        printf("%s", grade);
+        printf("%s: %f", grade, 1.05 * a);
     }else if(a >= 70){
         grade = "C등급";
-        printf("%s", grade);
+        printf("%s: %d", grade, a);
     }else if(a >= 60){
         grade = "D등급";
-        printf("%s", grade);
+        printf("%s: %d", grade, a);
     }else{
          grade = "F등급";
-        printf("%s", grade);
+        printf("%s: %d", grade, a);
     }
-    if (strstr(grade,"A")){
-        printf("%f", 1.1 * a);
-    }else if(strstr(grade,"B")){
-        printf("%f", 1.05 * a);
-    }else{
-        printf("%d",a);
-    }    
 }
