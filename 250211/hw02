@@ -1,0 +1,50 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+void main()
+{
+    int a;
+    scanf("%d",&a);
+    
+    switch(a){
+        case 0:
+            printf('A');
+            break;
+        case 1:
+            printf('B');
+            break;
+        case 2:
+            printf('C');
+            break;
+        case 3:
+            printf('D');
+            break;
+        case 4:
+            printf('E');
+            break;
+        case 5:
+            printf('F');
+            break;
+        case 6:
+            printf('G');
+            break;
+        case 7:
+            printf('H');
+            break;
+        case 8:
+            printf('I');
+            break;
+        case 9:
+            printf('J');
+            break;
+        default:
+            printf("0~9에 해당하는 자연수를 입력해주세요");
+    }
+}
