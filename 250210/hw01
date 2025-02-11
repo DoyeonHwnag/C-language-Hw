@@ -8,17 +8,15 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a, b, c;
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
-    if(c != 0)
-    {
-    int d = (a + b) * c - (a - b)/c;
-    printf("%d", d);
+    if(c != 0) {
+        int d = (a + b) * c - (a - b)/c;
+        printf("%d", d);
     }
     else
-    printf("c는 0이되면 안됩니다");
+        printf("c는 0이되면 안됩니다");
 }
