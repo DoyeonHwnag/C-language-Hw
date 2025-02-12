@@ -26,7 +26,7 @@ void main(){
             printf("특별한 숫자 입니다3");
         } else if (0 < a && a < 100 && s > f) {
             printf("특별한 숫자 입니다4");    
-        } else{
+        } else {
             printf("평범한 숫자 입니다");
         }
     } else {
