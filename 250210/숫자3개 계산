@@ -9,7 +9,7 @@ void main() {
 
     if(c != 0) {
         d = (a + b) * c - (a - b)/ c;
-        printf("%f", d);
+        printf("%lf", d);
     }else{
         printf("c는 0이되면 안됩니다");
     }    
