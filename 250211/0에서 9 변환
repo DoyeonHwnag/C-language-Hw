@@ -8,9 +8,10 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include <stdio.h>
 
-void main()
-{
+void main(){
+   
     int a;
+    printf("0~9에 해당되는 자연수를 입력해주세요\n");
     scanf("%d",&a);
     
     switch(a){
