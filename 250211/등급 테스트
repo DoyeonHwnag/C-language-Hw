@@ -7,27 +7,20 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <stdio.h>
-#include <string.h>
 
 void main(){
     
     int a = 0;
-    char * grade;
     scanf("%d", &a);
     if(a >= 90){
-        grade = "A등급";
-        printf("%s: %f", grade,1.1 * a);
+        printf("A등급", 1.1 * a);
     }else if(a >= 80){
-        grade = "B등급";
-        printf("%s: %f", grade, 1.05 * a);
+        printf("B등급", 1.05 * a);
     }else if(a >= 70){
-        grade = "C등급";
-        printf("%s: %d", grade, a);
+        printf("C등급", a);
     }else if(a >= 60){
-        grade = "D등급";
-        printf("%s: %d", grade, a);
+        printf("D등급", a);
     }else{
-         grade = "F등급";
-        printf("%s: %d", grade, a);
+        printf("F등급", a);
     }
 }
