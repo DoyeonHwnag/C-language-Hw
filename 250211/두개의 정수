@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main(){
+
+    int A = 0;
+    int B = 0;
+    
+    printf("정수 A B를 입력하세요.");
+    scanf("%d %d", &A, &B);
+    
+    if (A % B == 0){
+        printf("A / B = %d", A / B);
+    } else if (A < B){
+        printf("A + B = %d", A + B);
+    } else if (a % b != 0){
+        printf("A %% B = %d", A % B);
+    } else {
+        printf("A = %d B = %d", A, B);
+    }
+
+}
