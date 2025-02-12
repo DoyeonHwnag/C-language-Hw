@@ -19,7 +19,7 @@ void main(){
         s = (a % 100 - f) / 10;
         t = a / 100;
         printf("%d", b + c + d);
-    }else{ 
+    } else{ 
         printf("세자리 정수를 입력해주세요");
     }
 }
