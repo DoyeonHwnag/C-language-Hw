@@ -13,11 +13,11 @@ void main(){
     scanf("%d",&a);
     
     if (99 < a && a < 1000){
-        int b, c, d;
+        int f, s, t;
                     
-        b = a % 10;
-        c = (a % 100 - b) / 10;
-        d = (a - b - c) / 100;
+        f = a % 10;
+        s = (a % 100 - f) / 10;
+        t = a / 100;
         printf("%d", b + c + d);
     }else{ 
         printf("세자리 정수를 입력해주세요");
