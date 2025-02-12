@@ -15,10 +15,10 @@ void main() {
     printf("숫자 세개를 띄어쓰기 해서 입력하세요\n");
     scanf("%f %f %f", &a, &b, &c);
 
-    if(c != 0) {
+    if (c != 0) {
         d = (a + b) * c - (a - b)/ c;
         printf("%f", d);
-    }else{
+    } else {
         printf("c는 0이되면 안됩니다");
     }    
 }
