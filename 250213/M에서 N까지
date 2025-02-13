@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main() {
+    
+    int M, N;
+    printf("M에서 N까지 출력할 값을 입력해주세요\n");
+    scanf("%d %d\\n", &M, &N);
+    if (M > N) {
+        printf("M은 N보다 작은 숫자를 입력해 주세요");
+    } else {
+        for (int i = M; i < N + 1; i++){
+            if (i % 7 == 0 || i % 10 == 7){
+                continue;
+            } else if (i % 5 == 0){
+                break;
+            }
+            printf("%d\n", i);
+        }
+    }
+}    
