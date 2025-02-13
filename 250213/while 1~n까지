@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void main() {
+    int n;
+    scanf("%d", &n);
+    int m = 0;
+    while (m < i) {
+        m += 1;
+        printf(" %d", m);
+    }
+}    
