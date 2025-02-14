@@ -8,8 +8,8 @@ void main() {
     if (M > N) {
         printf("M은 N보다 작은 숫자를 입력해 주세요");
     } else {
-        for (int i = M; i < N + 1; i++){
-            if (i % 7 == 0 || i % 10 == 7 || i % 100 / 10 == 7){
+        for (int i = M; i < N + 1; i++) {
+            if (i % 7 == 0 || i % 10 == 7 || i % 100 / 10 == 7) {
                 continue;
             }
             printf("%d\n", i);
