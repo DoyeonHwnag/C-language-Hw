@@ -11,10 +11,11 @@ void main() {
         for (int i = M; i < N + 1; i++){
             if (i % 7 == 0 || i % 10 == 7){
                 continue;
-            } else if (i % 5 == 0){
-                break;
             }
             printf("%d\n", i);
+            if (i % 5 == 0){
+                break;
+            }
         }
     }
 }    
