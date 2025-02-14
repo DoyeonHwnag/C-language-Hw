@@ -6,6 +6,6 @@ void main() {
     int m = 0;
     while(m < n){
         m += 2;
-        printf("%d", m);
+        printf("%d ", m);
     }
 }    
