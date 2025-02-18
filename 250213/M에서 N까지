@@ -9,9 +9,9 @@ void main() {
         printf("M은 N보다 작은 숫자를 입력해 주세요");
     } else {
         for (int i = M; i < N + 1; i++) {
-            int j;
-            for (j = i; j > 0 && j % 10 != 7; j /= 10);
-            if (i % 7 == 0 || j != 0) {
+            int temp;
+            for (temp = i; temp > 0 && temp % 10 != 7; temp /= 10);
+            if (i % 7 == 0 || temp != 0) {
                 continue;
             }
             printf("%d\n", i);
