@@ -16,11 +16,15 @@ void main() {
     };
     
     union Value v;
-    v.intVal = 123;
-    v.floatVal =1.32;
-    v.charVal = 'A';
+    
+    printf("intVal: ");
+    scanf("%d", &v.intVal);
+    printf("floatVal: ");
+    scanf("%f", &v.floatVal);
+    printf("charVal: ");
+    scanf("%c", &v.charVal); 
     
     printf("%d %d\n", v.intVal, &v.intVal);
-    printf("%d %d\n", v.floatVal, &v.floatVal);
+    printf("%f %d\n", v.floatVal, &v.floatVal);
     printf("%c %d", v.charVal, &v.charVal);
 }
