@@ -19,10 +19,12 @@ void main() {
     
     printf("intVal: ");
     scanf("%d", &v.intVal);
+    
     printf("floatVal: ");
     scanf("%f", &v.floatVal);
+    
     printf("charVal: ");
-    scanf("%c", &v.charVal); 
+    scanf(" %c", &v.charVal); //공백이 있으면 됨
     
     printf("%d %d\n", v.intVal, &v.intVal);
     printf("%f %d\n", v.floatVal, &v.floatVal);
