@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int arr[] = {64, 25, 12, 22, 11};
+    int *ptr = arr;
+
+    printf("초기 배열: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", *(ptr + i));
+    }
+    // 최소 값의 인덱스 확인
+    for (int i = 0; i < 4; i++) { 
+        int min = i;
+
+        for (int j = i + 1; j < 5; j++) { 
+            if (*(ptr + j) < *(ptr + min)) { 
+                min = j;
+            }
+        }
+        if (min != i) { 
+            int temp = *(ptr + i);
+            *(ptr + i) = *(ptr + min);
+            *(ptr + min) = temp;
+        }
+        printf("\n %d회 정렬된 후: ", i + 1);
+        for (int k = 0; k < 5; k++) {
+            printf("%d ", *(ptr + k));
+        }
+    }
+}
