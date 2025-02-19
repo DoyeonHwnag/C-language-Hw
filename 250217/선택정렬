@@ -8,7 +8,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("%d ", *(ptr + i));
     }
-    // 최소 값의 인덱스 확인
+    
     for (int i = 0; i < 4; i++) { 
         int min = i;
 
