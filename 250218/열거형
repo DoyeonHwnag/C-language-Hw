@@ -1,11 +1,4 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
++
 #include <stdio.h>
 #include <string.h>
 void main() {
@@ -18,7 +11,7 @@ void main() {
     enum cartype c;
     
     char carname[50];
-    printf("차량 이름을 영어 대문자로 입력해주세요: ");
+    printf("차량 이름을 영어 대문자로 입력해주세요.: ");
     scanf("%s", carname);
     
     int sedansize = sizeof(carsedan)/sizeof(carsedan[0]);
@@ -29,25 +22,26 @@ void main() {
     
     for (int i = 0; i < sedansize; i++) {
         if (strcmp(carname, carsedan[i]) == 0) {
-            printf("이 차는 세단 입니다");
+            printf("이 차는 세단 입니다.");
             return;
         } 
     }
     for (int i = 0; i < suvsize; i++) {
         if (strcmp(carname, carsuv[i]) == 0) {
-            printf("이 차는 SUV 입니다");
-            return;
+            printf("이 차는 SUV 입니다.");
+            return
+            ;
         }
     }
     for (int i = 0; i < trucksize; i++) {
         if (strcmp(carname, cartruck[i]) == 0) {
-            printf("이 차는 트럭 입니다");
+            printf("이 차는 트럭 입니다.");
             return;
         }
     }
     for (int i = 0; i < vansize; i++) {
         if (strcmp(carname, carvan[i]) == 0) {
-            printf("이 차는 승합차 입니다");
+            printf("이 차는 승합차 입니다.");
             return;
         }
     }
