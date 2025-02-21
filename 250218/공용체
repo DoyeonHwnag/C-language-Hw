@@ -24,7 +24,7 @@ void main() {
     scanf("%f", &v.floatVal);
     
     printf("charVal: ");
-    scanf(" %c", &v.charVal); //공백이 있으면 됨
+    scanf(" %c", &v.charVal); //공백이 있으면 됨 없을 시 입력 안받고 종료 됨
     
     printf("%d %d\n", v.intVal, &v.intVal);
     printf("%f %d\n", v.floatVal, &v.floatVal);
