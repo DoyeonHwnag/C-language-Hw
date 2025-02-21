@@ -14,8 +14,13 @@ void main() {
     printf("3번 TRUCK\n");
     printf("1번 VAN\n");
     printf("차량 이름을 영어 대문자로 입력해주세요.: ");
+    
     char carname[50];
     scanf("%s", carname);
+    if (strlen(carname) >= 50) {
+        printf("입력값이 너무 깁니다.");
+        return;
+    }
     enum cartype c;
     int sedansize = sizeof(carsedan)/sizeof(carsedan[0]);
     int suvsize = sizeof(carsuv)/sizeof(carsuv[0]);
