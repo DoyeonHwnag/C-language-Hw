@@ -7,12 +7,16 @@ void main() {
     char *cartruck[] = {"PORTER", "MIGHTY", "POWERTRUCK", "XCIENTPRO", "BONGOIII"};
     char *carvan[] = {"SOLATI", "STARIA", "CARNIVAL"};
     
-    enum cartype c;
     
-    char carname[50];
+    printf("차량 분류\n");
+    printf("1번 SEDAN\n");
+    printf("2번 SUV\n");
+    printf("3번 TRUCK\n");
+    printf("1번 VAN\n");
     printf("차량 이름을 영어 대문자로 입력해주세요.: ");
+    char carname[50];
     scanf("%s", carname);
-    
+    enum cartype c;
     int sedansize = sizeof(carsedan)/sizeof(carsedan[0]);
     int suvsize = sizeof(carsuv)/sizeof(carsuv[0]);
     int trucksize = sizeof(cartruck)/sizeof(cartruck[0]);
@@ -21,26 +25,30 @@ void main() {
     
     for (int i = 0; i < sedansize; i++) {
         if (strcmp(carname, carsedan[i]) == 0) {
-            printf("이 차는 세단 입니다.");
+            c = SEDAN;
+            printf("이 차는 %d번 SEDAN 입니다.", c);
             return;
         } 
     }
     for (int i = 0; i < suvsize; i++) {
         if (strcmp(carname, carsuv[i]) == 0) {
-            printf("이 차는 SUV 입니다.");
+            c = SUV;
+            printf("이 차는 %d번 SUV 입니다.", c);
             return
             ;
         }
     }
     for (int i = 0; i < trucksize; i++) {
         if (strcmp(carname, cartruck[i]) == 0) {
-            printf("이 차는 트럭 입니다.");
+            c = TRUCK;
+            printf("이 차는 %d 번 TRUCK 입니다.", c);
             return;
         }
     }
     for (int i = 0; i < vansize; i++) {
         if (strcmp(carname, carvan[i]) == 0) {
-            printf("이 차는 승합차 입니다.");
+            c = VAN;
+            printf("이 차는 VAN 입니다.");
             return;
         }
     }
